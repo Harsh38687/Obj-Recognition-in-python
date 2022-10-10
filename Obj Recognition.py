@@ -116,4 +116,10 @@ fig, axs = plt.subplots(3, 3, figsize = (19,6))
 fig.subplots_adjust(hspace = 1)
 axs = axs.flatten()
 
-
+for i, img in enumerate(batch):
+  for key, value in class_labels.items():
+    if class_result[i] == key:
+      title = 'Prediction: {}\nActual: {}'.format(class_labels[key], class_labels[labels[i]])
+      axs[i].set_title(title)
+      axs[i].axes.get_xaxis().set_visible(False)
+      axs[i].axes.get_yaxis().set_visible(False)

@@ -112,6 +112,8 @@ print(class_result)
 
 # show the plot
 plt.show
-
+fig, axs = plt.subplots(3, 3, figsize = (19,6))
+fig.subplots_adjust(hspace = 1)
+axs = axs.flatten()
 
 

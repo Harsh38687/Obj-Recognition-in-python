@@ -110,7 +110,8 @@ print(class_result)
 # plot the image
   axs[i].imshow(img)
 
-
+# show the plot
+plt.show
 
 
 

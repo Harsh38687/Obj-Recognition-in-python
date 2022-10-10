@@ -107,7 +107,8 @@ print(class_result)
 
 ### Final object detection
 
-
+# plot the image
+  axs[i].imshow(img)
 
 
 

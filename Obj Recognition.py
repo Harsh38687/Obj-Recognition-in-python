@@ -94,7 +94,8 @@ class_labels = dict(zip(classes,names))
 batch = X_test[100:109]
 labels = np.argmax(Y_test[100:109],axis=-1)
 
-
+# make predictions
+predictions = model.predict(batch, verbose = 1)
 
 print(predictions)
 
